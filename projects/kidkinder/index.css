@@ -1,0 +1,738 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8;
+}
+
+.logo h1 {
+    color: rgb(40, 179, 206);
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Bitcount Grid Double", system-ui;
+    transition: all 2s linear 0.0001s;
+}
+
+.logo h1:hover {
+    transform: skew(30deg) translate(30px);
+}
+
+.header-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.header-ul a {
+    color: rgb(40, 179, 206);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.2s;
+    ;
+}
+
+.header-ul a:hover {
+    color: rgb(12, 52, 112);
+}
+
+.header-btn {
+    border: none;
+    display: flex;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(40, 179, 206);
+    padding: 12px 25px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.header-btn:hover {
+    background: rgb(12, 52, 112);
+}
+
+
+.blue-section {
+    background-color: rgb(40, 179, 206);
+    padding: 70px 8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blue-txt {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.blue-txt h6 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.blue-txt h2 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.blue-txt p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.learn-btn {
+    border: none;
+    background: rgb(18, 70, 89);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.learn-btn:focus {
+    background-color: rgb(219, 13, 13);
+}
+
+.blue-img {
+    width: 45%;
+    text-align: right;
+}
+
+.blue-img img {
+    width: 100%;
+    max-width: 550px;
+}
+
+.wrapper {
+    margin: 50px auto;
+    width: 90%;
+}
+
+.kidcards-1,
+.kidcards-2 {
+    display: flex;
+    /* height: 140px;
+    width: 70%; */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    background: rgb(212, 211, 211);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card h4 {
+    color: rgb(18, 70, 89);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: rgb(86, 84, 84);
+    line-height: 1.5;
+}
+
+.about-section {
+    display: flex;
+    gap: 40px;
+}
+
+/* .about-left{
+    flex: 1;
+} */
+.main-img {
+    width: 100%;
+    height: 620px;
+    margin: 50px auto;
+}
+
+.suggest {
+    width: 60%;
+    height: 620px;
+    flex: 1;
+    background: #fbf8f8;
+    padding: 40px;
+    margin-bottom: 20px;
+    margin: 50px auto;
+}
+
+.suggest h6 {
+    margin-bottom: 15px;
+    color: rgb(55, 139, 170);
+    font-size: 15px;
+}
+
+.suggest h3 {
+    margin-bottom: 20px;
+    color: rgb(18, 70, 89);
+    font-size: 35px;
+}
+
+.suggest p {
+    margin-bottom: 20px;
+    color: rgb(86, 84, 84);
+    line-height: 1.8;
+}
+
+.about-img {
+    width: 180px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.suggest ol {
+    color: rgb(86, 84, 84);
+    margin-left: 20px;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.suggest ol li {
+    display: flex;
+}
+
+.suggest-btn {
+    border: none;
+    background-color: rgb(40, 179, 206);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.suggest-btn:hover {
+    background-color: rgb(18, 70, 89);
+}
+
+.popular {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.popular img {
+    width: 300px;
+    height: 140px;
+    display: flex;
+}
+
+.popular h6 {
+    color: rgb(55, 139, 170);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.popular h3 {
+    font-size: 40px;
+    color: rgb(18, 70, 89);
+    margin-bottom: 40px;
+}
+
+.card-section {
+    display: flex;
+}
+
+.popular-card {
+    width: 30%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.popular-card img {
+    padding-bottom: 10px;
+}
+
+.popular-card h4 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: rgb(18, 70, 89);
+}
+
+.popular-card p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(86, 84, 84);
+    line-height: 1.8;
+}
+
+.popular-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.popular-card table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.popular-card table td {
+    padding: 12px 0;
+}
+
+.popular-card table tr:last-child {
+    border: none;
+}
+
+.popular-btn {
+    border: none;
+    background-color: rgb(40, 179, 206);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.popular-btn:focus {
+    background-color: rgb(18, 70, 89);
+    ;
+}
+
+.popular-btn:hover {
+    background: rgb(12, 52, 112);
+}
+
+.book-section {
+    display: flex;
+
+}
+
+.book-left {
+
+    margin: 50px auto;
+    width: 60%;
+
+}
+
+.book-left h6 {
+    margin-bottom: 15px;
+    color: rgb(55, 139, 170);
+    font-size: 15px;
+}
+
+.book-left h3 {
+    margin-bottom: 20px;
+    color: rgb(18, 70, 89);
+    font-size: 35px;
+}
+
+.book-left p {
+    margin-bottom: 20px;
+    color: rgb(86, 84, 84);
+    line-height: 1.8;
+}
+
+.book-left ol {
+    color: rgb(86, 84, 84);
+    margin-left: 20px;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.book-left ol li {
+    display: flex;
+}
+
+.book-btn {
+    border: none;
+    background-color: rgb(40, 179, 206);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: cell;
+}
+
+.book-form {
+    width: 40%;
+    text-align: center;
+}
+
+.book-form h2 {
+    background: rgb(18, 70, 89);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.input-form {
+    padding: 20px;
+    background: rgb(40, 179, 206);
+}
+
+.book-form input,
+.book-form select {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 15px;
+}
+
+.book-form-btn {
+    background: rgb(18, 70, 89);
+    width: 100%;
+    padding: 14px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: grab;
+}
+
+.book-form-btn:hover {
+    background: rgb(12, 52, 112);
+}
+
+.teacher-section {
+    width: 100%;
+    text-align: center;
+}
+
+.teachers {
+    display: flex;
+}
+
+.teacher-section h6 {
+    color: rgb(55, 139, 170);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.teacher-section h3 {
+    font-size: 40px;
+    color: rgb(18, 70, 89);
+    margin-bottom: 40px;
+}
+
+.teacher-section img {
+    border-radius: 50%;
+    height: 200px;
+    display: flex;
+}
+
+.teacher-circle {
+    width: 25%;
+    margin: 0px 40px;
+}
+
+.teacher-circle h4 {
+    padding: 10px;
+    color: rgb(18, 70, 89);
+    letter-spacing: 0.1px;
+}
+
+.teacher-circle h6 {
+    padding: 0px;
+    color: rgb(86, 84, 84);
+}
+
+.parent-section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.parent-section h6 {
+    color: rgb(55, 139, 170);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.parent-section h3 {
+    font-size: 40px;
+    color: rgb(18, 70, 89);
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.testimonial {
+    width: 32%;
+}
+
+.card {
+    background: rgb(212, 211, 211);
+    padding: 25px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.card p {
+    color: rgb(86, 84, 84);
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.quote {
+    color: rgb(55, 139, 170);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.parent-info {
+    display: flex;
+    align-items: center;
+    margin: top 20px;
+}
+
+.parent-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.parent-info h4 {
+    color: rgb(18, 70, 89);
+    margin: 0;
+}
+
+.parent-info p {
+    color: rgb(86, 84, 84);
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.dots {
+    margin-top: 30px;
+}
+
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(212, 211, 211);
+    margin: 0 4px;
+}
+
+.dots .active {
+    background: rgb(55, 139, 170);
+}
+
+.latest-section {
+    width: 90%;
+    margin: 80px 0;
+    text-align: center;
+}
+
+.latest-section h6 {
+    color: rgb(55, 139, 170);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.latest-section h3 {
+    font-size: 40px;
+    color: rgb(18, 70, 89);
+    margin-bottom: 40px;
+}
+
+.blog-section {
+    align-items: center;
+    margin: 20px;
+}
+
+.blog-section img {
+    object-fit: cover;
+    margin-right: 15px;
+    display: flex;
+    height: 200px;
+}
+
+.blog-card {
+    padding: 8px;
+    background-color: rgb(212, 211, 211);
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.blog-card h4 {
+    color: rgb(18, 70, 89);
+    padding-bottom: 10px;
+}
+
+.blog-card p {
+    color: rgb(86, 84, 84);
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.blog-btn {
+    border: none;
+    background-color: rgb(40, 179, 206);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 10px;
+    cursor: context-menu;
+}
+
+.blog-btn:active {
+    background-color: rgb(18, 70, 89);
+}
+
+.footer-section {
+    background-color: rgb(1, 60, 78);
+    color: white;
+}
+
+.company-details {
+    width: 25%;
+    padding: 20px;
+
+}
+
+.company-details h4 {
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.company-details p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(238, 231, 231);
+}
+
+.get-in-touch {
+    width: 25%;
+    padding: 20px;
+}
+
+.quick-links {
+    width: 25%;
+    padding: 20px;
+}
+
+.newsletter {
+    width: 25%;
+    padding: 20px;
+}
+
+.footer-headings {
+    padding-bottom: 10px;
+    color: rgb(55, 139, 170);
+    font-size: 24px;
+}
+
+.footer-headings div {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.get-in-touch div {
+    padding-bottom: 10px;
+}
+
+.get-in-touch span {
+    padding-bottom: 10px;
+    font-style: bold;
+}
+
+.get-in-touch div p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(238, 231, 231);
+}
+
+.icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.icons span {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i {
+    color: white;
+    font-size: 18px;
+}
+
+.icons span:hover {
+    background: white;
+}
+
+.icons span:hover i {
+    color: #16b5d8;
+}
+
+.newsletter-form {
+    text-align: center;
+
+}
+
+.newsletter-form input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.news-btn {
+    border: none;
+    background-color: rgb(40, 179, 206);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 10px;
+    cursor: progress;
+    width: 100%;
+}
+
+.news-btn:hover {
+    background-color: brown;
+}
+
+.copyright {
+    padding: 10px;
+    border-top: 1px solid gray;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright span {
+    text-align: center;
+}

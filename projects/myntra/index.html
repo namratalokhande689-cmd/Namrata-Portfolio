@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-root">
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <img src="image/logo.png" alt="" width="53px" height="36px" />
+                </a>
+                <nav class="main-nav">
+                    <a class="nav-link" href="#">MEN</a>
+                    <a class="nav-link" href="#">WOMEN</a>
+                    <a class="nav-link" href="#">KIDS</a>
+                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="#">BEAUTY</a>
+                    <a class="nav-link" href="#">GENZ</a>
+                    <a class="nav-link studio-link" href="#">STUDIO <span class="new-tag">NEW</span></a>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more" readonly>
+                </div>
+                <div class="header-actions">
+
+                    <button class="action-btn"><i class="fa-solid fa-user"></i>Profile</button>
+                    <button class="action-btn"><i class="fa-regular fa-heart"></i>Wishlist</button>
+                    <button class="action-btn"><i class="fa-solid fa-bag-shopping"></i>Bag</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-main">
+            <div class="side-panel">
+                <div class="side-panel-text">UPTO ₹400 OFF <i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="page-top">
+                <div class="breadcrumb"><a href="#">Home</a> / <a href="#">Accessories</a> / <strong>Gadgets</strong>
+                </div>
+                <h1 class="page-title">Gadgets <span class="item-count">- 1716 items</span></h1>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-bar-left">
+                    <span class="filters-label">FILTERS</span>
+                    <button class="clear-all-btn">CLEAR ALL</button>
+                </div>
+                <div class="sort-wrap">
+                    <label class="sort-label">Bundles</label>
+                    <select class="sort-select">
+                        <option>-</option>
+                        <option>Single style</option>
+                    </select>
+                </div>
+                <div class="sort-wrap">
+                    <label class="sort-label">Country of Origin</label>
+                    <select class="sort-select">
+                        <option>-</option>
+                        <option>China</option>
+                        <option>Hongkong</option>
+                        <option>India</option>
+                        <option>Maleshia</option>
+                    </select>
+                </div>
+                <div class="sort-wrap">
+                    <label class="sort-label">Size</label>
+                    <select class="sort-select">
+                        <option>-</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>Onesize</option>
+                        <option>4Mm</option>
+                        <option>42Mm</option>
+                    </select>
+                </div>
+                <div class="sort-wrap">
+                    <label class="sort-label">Sort by:</label>
+                    <select class="sort-select">
+                        <option>Recommended</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="body-layout">
+                <aside class="sidebar">
+                    <div class="filter-section">
+                        <h3 class="filter-heading">GENDER</h3>
+                        <label class="radio-label"><input type="radio" name="g" checked> Men</label>
+                        <label class="radio-label"><input type="radio" name="g"> Women</label>
+                        <label class="radio-label"><input type="radio" name="g"> Boys</label>
+                        <label class="radio-label"><input type="radio" name="g"> Girls</label>
+                    </div>
+                    <div class="filter-section">
+                        <h3 class="filter-heading">CATEGORIES</h3>
+                        <label class="checkbox-label"><input type="checkbox" name="g" checked>Headphones(835)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g"> Speakers(478)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g"> Smart Watches(388)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">Fitness Bands(11)</label>
+                    </div>
+                    <div class="filter-section">
+                        <h3 class="filter-heading">BRAND</h3>
+                        <label class="checkbox-label"><input type="checkbox" name="g" checked> Fastrack(82)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g"> Timex(67)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g"> boAt(48)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">NOISE(41)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">GOBOULT(45)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">Titan(26)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">nervfit(15)</label>
+                    </div>
+                    <div style="color: red;margin-left: 26px;font-size: 12px;">+ 12 more</div>
+
+                    <div class="sidebar-divider"></div>
+                    <div class="filter-section">
+                        <h3 class="filter-heading">Price</h3>
+                        <input class="price-range" type="range" min="100" max="1000" value="2000">
+                        <div style="font-weight: bold;font-size: 12px;padding-top: 20px;">₹100 - ₹10,100+</div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-heading">COLOR</h3>
+                        <label class="checkbox-label"><input type="checkbox" name="g" checked>Black (631)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g"> Blue(260)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g"> Red(481)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">Brown(413)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">Yellowgreen(455)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">Orange(266)</label>
+                        <label class="checkbox-label"><input type="checkbox" name="g">Gray(152)</label>
+                        <div style="color:red;font-size: 12px;padding-top: 20px;">+ 33 more</div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-heading">DISCOUNT RANGE</h3>
+                        <label class="radio-label"><input type="radio" name="g" checked> 10% and above</label>
+                        <label class="radio-label"><input type="radio" name="g">20% and above</label>
+                        <label class="radio-label"><input type="radio" name="g"> 30% and above</label>
+                        <label class="radio-label"><input type="radio" name="g"> 40% and above</label>
+                    </div>
+                </aside>
+
+                <section class="products-section">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img1.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img2.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img3.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img4.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img5.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img6.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img7.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img8.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img2.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img1.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img3.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img5.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img6.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image-wrap"><img src="image/img7.png" alt=""></div>
+                            <div class="product-info">
+                                <div class="product-brand">Brand</div>
+                                <div class="product-name">Product Name</div>
+                                <div class="product-price"><span class="price-current">₹1999</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="wrapper">
+                <div class="middle-section">
+                    <div class="index-section">
+                        <h3>Gadgets price list</h3>
+                        <table style="margin-top: 20px;">
+                            <thead style="box-sizing: inherit; text-align: justify;">
+                                <tr>
+                                    <th>Gadgets</th>
+                                    <th>PRICE (RS)</th>
+                                </tr>
+                            </thead>
+                            <tbody style="box-sizing: inherit;display: table-row-group;">
+                                <tr>
+                                    <td>GOBOULT Thrux 1.39''HD Screen, GPS Tracker, Working Crown, BT Calling Smartwatch
+                                    </td>
+                                    <td>Rs. 2299</td>
+                                </tr>
+                                <tr>
+                                    <td>GOBOULT Rover Pro 1.43'' AMOLED, BT Calling, 565 Nits Brightness Smartwatch</td>
+                                    <td>Rs. 2399</td>
+                                </tr>
+                                <tr>
+                                    <td>GOBOULT Thrux 1.39''HD Screen, GPS Tracker, Working Crown, BT Calling Smartwatch
+                                    </td>
+                                    <td>Rs. 2799</td>
+                                </tr>
+                                <tr>
+                                    <td>GOBOULT Rover Pro 1.43'' AMOLED, BT Calling, 565 Nits Brightness Smartwatch</td>
+                                    <td>Rs. 3499</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3 style="color: #696b79;font-weight: 500;font-size: 16px;text-align: center;margin:20px;">BUY
+                        GADGETS
+                    </h3>
+                    <h3 style="color: #696b79;font-size: 20px;margin: 20px;">Changing the Way We Live — Electronic
+                        Gadgets
+                        on Myntra
+                    </h3>
+                    <p style="font-size: 14px;color: #7e818c;line-height: 1.5;text-align: justify;">It’s astonishing how
+                        far
+                        technology has come. We wake up to a ringing alarm on our smartphone and sleep with the same
+                        smartphone in
+                        our hands. Electronic gadgets such as laptops, headphones, smartwatches, iPads, etc. have become
+                        significant
+                        life necessities. Since electronic gadgets play such a major part in our lives, it begs the
+                        question, “Where
+                        should I shop gadgets from?”. One must buy devices from reputed and dependable brands. These
+                        genuine
+                        products come with the manufacturer’s warranty and are easily accessible on trusted online
+                        websites.
+                    </p>
+                    <p style="font-size: 14px;color: #7e818c;line-height:1.5;text-align: justify;">Reaping the benefits
+                        of
+                        this
+                        ever-growing technology, Myntra brings you access to a wide range of latest gadgets from both
+                        homegrown and
+                        international brands. Our assembly of gadgets has collections by trusted brands. Some of the
+                        reputed
+                        brands
+                        that we have with us include JBL, OPTA, Energy Sistem, Philips, Boult, boAt, Saregama, WINGS and
+                        many more.
+                        Let’s dig into all the gadgets you can expect to find on Myntra.</p>
+                </div>
+                <div class="footer">
+                    <div class="footer-section w-20">
+                        <h3>ONLINE SHOPPING</h3>
+                        <p>Men</p>
+                        <p>Women</p>
+                        <p>Kids</p>
+                        <p>Home</p>
+                        <p>Beauty</p>
+                        <p>Genz</p>
+                        <p>Gift Card</p>
+                        <h3>USEFUL LINKS</h3>
+                        <p>Blog</p>
+                        <p>Careers</p>
+                        <p>Site Map</p>
+                        <p>Corporate Information</p>
+                        <p>Whitehat</p>
+                        <p>Cleartrip</p>
+                        <p>Myntra Global</p>
+                    </div>
+                    <div class="footer-section w-20">
+                        <h3>CUSTOMER POLICIES</h3>
+                        <p>Contact us</p>
+                        <p>FAQ</p>
+                        <p>T&C</p>
+                        <p>Terms of use</p>
+                        <p>Track Order</p>
+                    </div>
+                    <div class="footer-section w-30">
+                        <div>
+                            <h3>EXPERIENCE MYNTRA APP ON MOBILE</h3>
+                            <img src="image/googleplay.png" alt="" />
+                        </div>
+                        <div>
+                            <h3>KEEP IN TOUCH</h3>
+                            <div><span><i class="fa-brands fa-square-facebook"></i></span>
+                                <span><i class="fa-brands fa-twitter"></i></span>
+                                <span><i class="fa-brands fa-youtube"></i></span>
+                                <span><i class="fa-brands fa-square-instagram"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-section w-30">
+                        <div class="return-section">
+                            <img src="image/originalicon.png" alt="" />
+                            <h3>100% ORIGINAL guarantee for all products at myntra.com</h3>
+                        </div>
+                        <div class="return-section">
+                            <img src="image/icon.png" alt="" />
+                            <h3>Return within 14days of receiving your order</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-concern">
+                        In case of any concern, <a href="#">Contact Us</a>
+                    </div>
+
+                    <div class="footer-copyright">
+                        © 2026 www.myntra.com. All rights reserved.
+                    </div>
+
+                    <div class="footer-company">
+                        A Flipkart company
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
