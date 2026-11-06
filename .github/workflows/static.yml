@@ -31,6 +31,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: projects/Grocery-Bootstrap/package-lock.json
+      - name: Build Grocery demo
+        working-directory: projects/Grocery-Bootstrap
+        run: |
+          npm ci
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
